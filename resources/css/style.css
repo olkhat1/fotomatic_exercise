@@ -129,7 +129,8 @@ header .mobile {
 #sign-up-section {
   background-image: url(/resources/images/banner-landingpage.jpg);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -137,11 +138,14 @@ header .mobile {
 }
 
 #sign-up-cta {
+  position: relative;
+  top: 171px;
+  left: 10%;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin-left: 100px;
+  
 
 }
 
@@ -385,7 +389,7 @@ header .mobile {
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -397,19 +401,22 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+
 }
 
 footer .content {
-  color: white;
   display: flex;
-  font-size: .75rem;
+  color: white;
+  font-size: .75rem
 }
 
 footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+
+@media only screen and (min-width: 760px) 
+{
   footer .content {
     font-size: .625rem;
   }
